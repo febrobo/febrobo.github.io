@@ -1,3 +1,5 @@
 media/video/*.webm filter=lfs diff=lfs merge=lfs -text
 media/video/*.mp4 filter=lfs diff=lfs merge=lfs -text
-media/video/digitalbraillereader-web.mp4 filter=lfs diff=lfs merge=lfs -text
+
+# Exceptions - these videos should NOT use LFS
+media/video/dbr-demo.mp4 !filter !diff !merge
